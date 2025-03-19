@@ -5,11 +5,6 @@
     },
     "auditLog": "logs\\.31eff05ce0eaff1066851bfcbe7d54534dd583bf-audit.json",
     "files": [
-        {
-            "date": 1742313195619,
-            "name": "logs\\2025-03-18-app.log",
-            "hash": "0dbeb84addfad9a5495c1e61b409003d7e59afb9ce0cd0417a3348b02a311323"
-        }
     ],
     "hashType": "sha256"
 }
