@@ -1,4 +1,3 @@
-"use client";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { REGEXP_ONLY_DIGITS } from "input-otp";
@@ -111,7 +110,7 @@ const VerifyMfa = () => {
                     </FormLabel>
                     <FormControl>
                       <InputOTP
-                        className="!text-lg flex items-center"
+                        className="text-lg! flex items-center"
                         maxLength={6}
                         pattern={REGEXP_ONLY_DIGITS}
                         {...field}
@@ -120,31 +119,31 @@ const VerifyMfa = () => {
                         <InputOTPGroup>
                           <InputOTPSlot
                             index={0}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                           <InputOTPSlot
                             index={1}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                         </InputOTPGroup>
                         <InputOTPGroup>
                           <InputOTPSlot
                             index={2}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                           <InputOTPSlot
                             index={3}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                         </InputOTPGroup>
                         <InputOTPGroup>
                           <InputOTPSlot
                             index={4}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                           <InputOTPSlot
                             index={5}
-                            className="!w-14 !h-12 !text-lg"
+                            className="w-14! h-12! text-lg!"
                           />
                         </InputOTPGroup>
                       </InputOTP>

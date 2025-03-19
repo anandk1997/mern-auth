@@ -74,7 +74,7 @@ const Asidebar = () => {
   return (
     <>
       <Sidebar collapsible="icon">
-        <SidebarHeader className="!pt-0 dark:bg-background">
+        <SidebarHeader className="pt-0! dark:bg-background">
           <div className="flex h-[60px] items-center">
             <Logo fontSize="20px" size="30px" url="/home" />
             {open && (
@@ -94,7 +94,7 @@ const Asidebar = () => {
                 {items.map((item) => (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
-                      <a href={item.url} className="!text-[15px]">
+                      <a href={item.url} className="text-[15px]!">
                         <item.icon />
                         <span>{item.title}</span>
                       </a>
@@ -136,7 +136,7 @@ const Asidebar = () => {
                     </SidebarMenuButton>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent
-                    className="w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg"
+                    className="w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg"
                     side={"bottom"}
                     align="start"
                     sideOffset={4}

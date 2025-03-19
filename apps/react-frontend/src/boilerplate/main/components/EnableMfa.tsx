@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { z } from "zod";
 import { Copy } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -44,10 +43,10 @@ const EnableMfa = () => {
     },
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {}
+  function onSubmit(_: z.infer<typeof FormSchema>) {}
 
   return (
-    <div className="via-root to-root rounded-xl bg-gradient-to-r p-0.5">
+    <div className="via-root to-root rounded-xl bg-linear-to-r p-0.5">
       <div className="rounded-[10px] p-6">
         <div className="flex items-center gap-3">
           <h3 className="text-xl tracking-[-0.16px] text-slate-12 font-bold mb-1">
@@ -71,7 +70,7 @@ const EnableMfa = () => {
           <DialogTrigger asChild>
             <Button className="h-[35px] text-white">Enable MFA</Button>
           </DialogTrigger>
-          <DialogContent className="!gap-0">
+          <DialogContent className="gap-0!">
             <DialogHeader>
               <DialogTitle className="text-[17px] text-slate-12 font-semibold">
                 Setup Multi-Factor Authentication
@@ -84,7 +83,7 @@ const EnableMfa = () => {
               <span className="text-sm text-[#0007149f] dark:text-inherit font-normal">
                 Use an app like{" "}
                 <a
-                  className="!text-primary underline decoration-primary decoration-1 underline-offset-2 transition duration-200 ease-in-out hover:decoration-blue-11 dark:text-current dark:decoration-slate-9 dark:hover:decoration-current "
+                  className="text-primary! underline decoration-primary decoration-1 underline-offset-2 transition duration-200 ease-in-out hover:decoration-blue-11 dark:text-current dark:decoration-slate-9 dark:hover:decoration-current "
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://support.1password.com/one-time-passwords/"
@@ -93,7 +92,7 @@ const EnableMfa = () => {
                 </a>{" "}
                 or{" "}
                 <a
-                  className="!text-primary underline decoration-primary decoration-1 underline-offset-2 transition duration-200 ease-in-out hover:decoration-blue-11 dark:text-current dark:decoration-slate-9 dark:hover:decoration-current "
+                  className="text-primary! underline decoration-primary decoration-1 underline-offset-2 transition duration-200 ease-in-out hover:decoration-blue-11 dark:text-current dark:decoration-slate-9 dark:hover:decoration-current "
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://safety.google/authentication/"
@@ -160,7 +159,7 @@ const EnableMfa = () => {
                         </FormLabel>
                         <FormControl>
                           <InputOTP
-                            className="!text-lg flex items-center"
+                            className="text-lg! flex items-center"
                             maxLength={6}
                             pattern={REGEXP_ONLY_DIGITS}
                             {...field}
@@ -169,31 +168,31 @@ const EnableMfa = () => {
                             <InputOTPGroup>
                               <InputOTPSlot
                                 index={0}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                               <InputOTPSlot
                                 index={1}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                             </InputOTPGroup>
                             <InputOTPGroup>
                               <InputOTPSlot
                                 index={2}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                               <InputOTPSlot
                                 index={3}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                             </InputOTPGroup>
                             <InputOTPGroup>
                               <InputOTPSlot
                                 index={4}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                               <InputOTPSlot
                                 index={5}
-                                className="!w-14 !h-12 !text-lg"
+                                className="w-14! h-12! text-lg!"
                               />
                             </InputOTPGroup>
                           </InputOTP>

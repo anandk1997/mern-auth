@@ -1,4 +1,3 @@
-"use client";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import Asidebar from "./components/Asidebar";
 import Header from "./components/Header";

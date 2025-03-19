@@ -20,7 +20,7 @@ const Sessions = () => {
 
   const currentSession = sessions?.find((session) => session.isCurrent);
   const othersSessions = sessions?.filter(
-    (session) => session.isCurrent !== true
+    (session) => session.isCurrent !== true,
   );
 
   const handleDelete = useCallback(
@@ -43,11 +43,11 @@ const Sessions = () => {
         },
       });
     },
-    [mutate, refetch]
+    [mutate, refetch],
   );
 
   return (
-    <div className="via-root to-root rounded-xl bg-gradient-to-r p-0.5">
+    <div className="via-root to-root rounded-xl bg-linear-to-r p-0.5">
       <div className="rounded-[10px] p-6">
         <h3 className="text-xl tracking-[-0.16px] text-slate-12 font-bold mb-1">
           Sessions

@@ -2,7 +2,7 @@ import UAParser from "ua-parser-js";
 import { format, formatDistanceToNowStrict, isPast } from "date-fns";
 import { Smartphone, Laptop, LucideIcon } from "lucide-react";
 
-type DeviceType = "desktop" | "mobile";
+// type DeviceType = "desktop" | "mobile";
 
 interface SessionInfo {
   deviceType: string;
@@ -14,7 +14,7 @@ interface SessionInfo {
 
 export const parseSession = (
   userAgent: string,
-  createdAt: string
+  createdAt: string,
 ): SessionInfo => {
   const parser = new UAParser(userAgent);
   const result = parser.getResult();

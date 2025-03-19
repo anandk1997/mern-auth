@@ -25,7 +25,7 @@ export default function ComfirmAccount() {
         <p className="mt-6 text-sm text-muted-foreground dark:text-[#f1f7feb5] font-normal">
           If you have any issue confirming your account please, contact{" "}
           <a
-            className="outline-none transition duration-150 ease-in-out 
+            className="outline-hidden transition duration-150 ease-in-out 
             focus-visible:ring-2 text-primary hover:underline focus-visible:ring-primary"
             href="#"
           >

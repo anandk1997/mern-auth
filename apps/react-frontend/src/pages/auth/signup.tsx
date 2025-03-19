@@ -171,7 +171,7 @@ export default function SignUp() {
                 </div>
                 <Button
                   disabled={isPending}
-                  className="w-full text-[15px] h-[40px] !bg-blue-500 text-white font-semibold"
+                  className="w-full text-[15px] h-[40px] bg-blue-500! text-white font-semibold"
                   type="submit"
                 >
                   {isPending && <Loader className="animate-spin" />}

@@ -1,9 +1,8 @@
-import React from "react";
 import SessionItem from "./SessionItem";
 
 const Sessions = () => {
   return (
-    <div className="via-root to-root rounded-xl bg-gradient-to-r p-0.5">
+    <div className="via-root to-root rounded-xl bg-linear-to-r p-0.5">
       <div className="rounded-[10px] p-6">
         <h3 className="text-xl tracking-[-0.16px] text-slate-12 font-bold mb-1">
           Sessions

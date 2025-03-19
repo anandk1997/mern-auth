@@ -1,4 +1,3 @@
-import React from "react";
 import { ComputerIcon, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -8,7 +7,7 @@ const SessionItem = (props: {
   date: string;
   isCurrent?: boolean;
 }) => {
-  const { id, deviceName, date, isCurrent = false } = props;
+  const { deviceName, date, isCurrent = false } = props;
   return (
     <div className="w-full flex items-center ">
       <div
